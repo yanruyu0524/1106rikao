@@ -1,0 +1,131 @@
+@import 'common.scss';
+@import 'mixin.scss';
+* {
+    @include sizing;
+}
+
+html,
+body,
+.wrap {
+    @include num(100%, 100%);
+}
+
+.wrap {
+    @include box_flex;
+    @include direction(column);
+}
+
+header {
+    @include num(100%, pxTorem(44px));
+    @include absolute(fixed);
+    z-index: 99;
+    @include boxFlex(center, center);
+    form {
+        padding: pxTorem(5px) pxTorem(10px);
+        @include num(80%, 80%);
+        #{$bg}: #fff;
+        border-radius: pxTorem(8px);
+        input {
+            border: 0;
+            outline: none;
+            @include num(100%, 100%);
+        }
+    }
+}
+
+section {
+    width: 100%;
+    @include flex(1);
+    @include box_flex;
+    @include direction(column);
+    .bg {
+        @include num(100%, pxTorem(130px));
+        border: 1px solid #ccc;
+        img {
+            @include num(100%, 100%);
+        }
+    }
+    .swiper-container {
+        @include num(100%, pxTorem(200px));
+        .swiper-wrapper {
+            @include num(100%, 100%);
+        }
+        .swiper-slide {
+            @include num(100%, 100%);
+            @include box_flex;
+            @include flexWrap(wrap);
+            dl {
+                @include box_flex;
+                @include direction(column);
+                width: 20%;
+                padding: pxTorem(5px) 0;
+                dt {
+                    @include flex(8);
+                    @include boxFlex(center, center);
+                    img {
+                        @include num(70%, 70%);
+                    }
+                }
+                dd {
+                    @include flex(2);
+                    @include boxFlex(center, center);
+                    font-size: pxTorem(14px);
+                }
+            }
+        }
+    }
+    .content {
+        @include flex(1);
+        width: 100%;
+        overflow: hidden;
+        .product {
+            width: 100%;
+            @include absolute(relative);
+            .productlist {
+                @include box_flex;
+                @include flexWrap(wrap);
+                overflow: hidden;
+                dl {
+                    flex-shrink: 0;
+                    width: 50%;
+                    @include box_flex;
+                    padding: pxTorem(10px) pxTorem(20px);
+                    dt {
+                        @include flex(3);
+                        @include boxFlex(center, center);
+                        img {
+                            @include num(100%, 100%);
+                        }
+                    }
+                    dd {
+                        @include flex(7);
+                        h4 {
+                            padding: pxTorem(5px) 0;
+                        }
+                        p {
+                            color: #666;
+                        }
+                    }
+                }
+            }
+            .add {
+                @include num(100%, pxTorem(50px));
+                text-align: center;
+                line-height: pxTorem(50px);
+                @include absolute(absolute);
+                font-size: pxTorem(18px);
+            }
+            .up {
+                top: pxTorem(-50px);
+            }
+            .down {
+                bottom: pxTorem(-50px);
+            }
+        }
+    }
+}
+
+footer {
+    @include num(100%, pxTorem(44px));
+    #{$bg}: pink
+}

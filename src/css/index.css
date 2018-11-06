@@ -1,0 +1,336 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline; }
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none; }
+
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  font-family: arial, sans-serif; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+ins,
+a {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  display: inline-block; }
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none; }
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%; }
+
+.wrap {
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+
+header {
+  width: 100%;
+  height: 1.17333rem;
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center; }
+  header form {
+    padding: 0.13333rem 0.26667rem;
+    width: 80%;
+    height: 80%;
+    background: #fff;
+    border-radius: 0.21333rem; }
+    header form input {
+      border: 0;
+      outline: none;
+      width: 100%;
+      height: 100%; }
+
+section {
+  width: 100%;
+  -webkit-flex: 1 1 0%;
+  flex: 1 1 0%;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+  section .bg {
+    width: 100%;
+    height: 3.46667rem;
+    border: 1px solid #ccc; }
+    section .bg img {
+      width: 100%;
+      height: 100%; }
+  section .swiper-container {
+    width: 100%;
+    height: 5.33333rem; }
+    section .swiper-container .swiper-wrapper {
+      width: 100%;
+      height: 100%; }
+    section .swiper-container .swiper-slide {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      display: -webkit-flex;
+      /* NEW - Chrome */
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      section .swiper-container .swiper-slide dl {
+        display: flex;
+        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        display: -webkit-flex;
+        /* NEW - Chrome */
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        width: 20%;
+        padding: 0.13333rem 0; }
+        section .swiper-container .swiper-slide dl dt {
+          -webkit-flex: 8 1 0%;
+          flex: 8 1 0%;
+          display: flex;
+          display: -webkit-flex;
+          justify-content: center;
+          -webkit-justify-content: center;
+          align-items: center;
+          -webkit-align-items: center; }
+          section .swiper-container .swiper-slide dl dt img {
+            width: 70%;
+            height: 70%; }
+        section .swiper-container .swiper-slide dl dd {
+          -webkit-flex: 2 1 0%;
+          flex: 2 1 0%;
+          display: flex;
+          display: -webkit-flex;
+          justify-content: center;
+          -webkit-justify-content: center;
+          align-items: center;
+          -webkit-align-items: center;
+          font-size: 0.37333rem; }
+  section .content {
+    -webkit-flex: 1 1 0%;
+    flex: 1 1 0%;
+    width: 100%;
+    overflow: hidden; }
+    section .content .product {
+      width: 100%;
+      position: relative; }
+      section .content .product .productlist {
+        display: flex;
+        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        display: -webkit-flex;
+        /* NEW - Chrome */
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        overflow: hidden; }
+        section .content .product .productlist dl {
+          flex-shrink: 0;
+          width: 50%;
+          display: flex;
+          /* NEW, Spec - Opera 12.1, Firefox 20+ */
+          display: -webkit-flex;
+          /* NEW - Chrome */
+          padding: 0.26667rem 0.53333rem; }
+          section .content .product .productlist dl dt {
+            -webkit-flex: 3 1 0%;
+            flex: 3 1 0%;
+            display: flex;
+            display: -webkit-flex;
+            justify-content: center;
+            -webkit-justify-content: center;
+            align-items: center;
+            -webkit-align-items: center; }
+            section .content .product .productlist dl dt img {
+              width: 100%;
+              height: 100%; }
+          section .content .product .productlist dl dd {
+            -webkit-flex: 7 1 0%;
+            flex: 7 1 0%; }
+            section .content .product .productlist dl dd h4 {
+              padding: 0.13333rem 0; }
+            section .content .product .productlist dl dd p {
+              color: #666; }
+      section .content .product .add {
+        width: 100%;
+        height: 1.33333rem;
+        text-align: center;
+        line-height: 1.33333rem;
+        position: absolute;
+        font-size: 0.48rem; }
+      section .content .product .up {
+        top: -1.33333rem; }
+      section .content .product .down {
+        bottom: -1.33333rem; }
+
+footer {
+  width: 100%;
+  height: 1.17333rem;
+  background: pink; }
